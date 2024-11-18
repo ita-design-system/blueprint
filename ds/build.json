@@ -11,9 +11,28 @@
     },
     "tokens": {
         "colors": {
+            "100": "#FFFFFF",
+            "200": "#F4F4F4",
+            "300": "#E5E5E5",
+            "400": "#C4C4C4",
+            "500": "#888888",
+            "600": "#606060",
+            "700": "#404040",
+            "800": "#202020",
+            "900": "#000000",
+
+            "primary-100": "#C9EBFF",
+            "primary-200": "#A0D9FB",
+            "primary-300": "#78C8F6",
+            "primary-400": "#4FB6F2",
+            "primary-500": "#26A4ED",
+            "primary-600": "#1D8DCF",
+            "primary-700": "#1377B0",
+            "primary-800": "#0A6092",
+            "primary-900": "#004973"
         },
         "fontFamilies": {
-            "sketch": "Archistico-Normal, sans-serif",
+            "sketch": "KGBrokenVesselsSketch, sans-serif",
             "400": "VictorMono-Regular, sans-serif",
             "700": "VictorMono-Bold, sans-serif"
         },
@@ -245,7 +264,7 @@
             "prefix": "gap",
             "generate_from": "spacings",
             "values": ["0px", "1px"],
-            "names": ["0px", "1px"],
+            "names": ["0", "1px"],
             "responsive": true,
             "generate_utility": false
         },
@@ -253,7 +272,7 @@
             "prefix": "gap",
             "generate_from": "spacings",
             "values": ["0px", "1px"],
-            "names": ["0px", "1px"],
+            "names": ["0", "1px"],
             "responsive": true,
             "generate_utility": false
         },
@@ -310,8 +329,8 @@
         "max-width": {
             "prefix": "maxw",
             "generate_from": "",
-            "values": ["100%"],
-            "names": ["100"],
+            "values": ["100%", "1200px"],
+            "names": ["100", "1200px"],
             "responsive": true,
             "generate_utility": false
         },
@@ -530,6 +549,20 @@
             "generate_from": "colors",
             "values": ["transparent", "currentColor"],
             "names": [],
+            "responsive": false,
+            "generate_utility": false
+        },
+        
+        "background": {
+            "prefix": "bg",
+            "generate_from": "",
+            "values": [
+                "center/100% no-repeat url('../medias/icon_circle.svg')",
+                "center/100% no-repeat url('../medias/icon_circle.svg'), radial-gradient(circle, black 28%, transparent 32%, transparent 100%)",
+                "center/100% no-repeat url('../medias/icon_square.svg')",
+                "center/100% no-repeat url('../medias/icon_square.svg'),60% 50%/40% no-repeat url('../medias/icon_check.svg')"
+            ],
+            "names": ["radio", "radio-checked", "checkbox", "checkbox-checked"],
             "responsive": false,
             "generate_utility": false
         },

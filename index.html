@@ -53,14 +53,112 @@
     <link rel="stylesheet" href="./css/ds__grid-pattern.css">
     <link rel="stylesheet" href="./fonts/icomoon/style.css">
 </head>
-<body class="m-0 | ff-400">
-    <nav class="p-4 boimg-1 baimg-stripes-6">Navigation principale</nav>
-    <ul class="d-flex fw-wrap | m-0 p-0 | ls-none">
-        <li class="w-4t p-4 | boimg-1 baimg-stripes-6">skdjl</li>
-        <li class="w-4t p-4 | boimg-1 baimg-stripes-6">sd</li>
-        <li class="w-4t p-4 | boimg-1 baimg-stripes-6">sdfd</li>
-    </ul>
+<body class="m-0 | ff-400" style="min-height: 200vh;">
+    <main class="d-flex fd-column ai-center gap-6">
+        <nav class="d-flex ai-center jc-space-between gap-6 | pos-sticky top-0 z-1 | w-100 p-4 | boimg-2 bc-200">
+            <div class="d-flex ai-center gap-6">
+                <div class="d-flex ai-center gap-3 | c-primary-500"><span class="icon-menu c-primary-500"></span> Bouton</div>
+                Navigation principale
+            </div>
+            <div class="d-flex gap-6">
+                <a href="#">Lien</a>
+                <a href="#">Lien</a>
+                <a href="#">Lien</a>
+            </div>
+        </nav>
 
+        <section class="d-flex ai-start | pos-relative | w-100 p-9 | baimg-stripes-1 boimg-2">
+            <div class="pos-absolute top-50 left-50 t-tY-50 t-tX-50"><span class="icon-image fs-9"></span></div>
+            <h2 class="m-0 | ff-sketch fs-7 | bc-200">Titre de la section</h2>
+            <div style="height: 30vh;"></div>
+        </section>
+
+        <section class="d-flex fd-column gap-6 | pos-relative | w-100 maxw-1200px">
+            <h2 class="m-0 | ff-sketch fs-7">Titre de la section</h2>
+            <ul class="d-flex fw-wrap gap-6 | m-0 p-0 | ff-sketch | ls-none">
+                <li class="w-4t--xl w-12t--xs">
+                    <fieldset class="d-flex fd-column gap-6 | m-0 p-6 | b-0 boimg-1">
+                        <legend>Inputs</legend>
+                        <!-- Form input -->
+                        <div class="d-flex fd-column gap-1">
+                            <div>Label</div>
+                            <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
+                                <span class="c-500">Placeholder</span>
+                            </div>
+                        </div>
+                        <!-- Form input -->
+                        <div class="d-flex fd-column gap-1">
+                            <div>Label</div>
+                            <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
+                                Valeur
+                                <span class="icon-close"></span>
+                            </div>
+                        </div>
+                        <!-- Form input -->
+                        <div class="d-flex fd-column gap-1">
+                            <div>Label</div>
+                            <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
+                                <div class="d-flex ai-center gap-3">
+                                    <span class="icon-search"></span>
+                                    Valeur
+                                </div>
+                                <span class="icon-close"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </li>
+                <li class="w-4t--xl w-12t--xs">
+                    <fieldset class="d-flex fd-column gap-3 | m-0 p-6 | b-0 boimg-1">
+                        <legend>Radios</legend>
+                        <!-- Form radio -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-radio-checked"></div>
+                            <div>Label</div>
+                        </div>
+                        <!-- Form radio -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-radio"></div>
+                            <div>Label</div>
+                        </div>
+                        <!-- Form radio -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-radio"></div>
+                            <div>Label</div>
+                        </div>
+                    </fieldset>
+                </li>
+                <li class="w-4t--xl w-12t--xs">
+                    <fieldset class="d-flex fd-column gap-3 | m-0 p-6 | b-0 boimg-1">
+                        <legend>Checkboxes</legend>
+                        <!-- Form checkbox -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-checkbox-checked"></div>
+                            <div>Label</div>
+                        </div>
+                        <!-- Form checkbox -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-checkbox"></div>
+                            <div>Label</div>
+                        </div>
+                        <!-- Form checkbox -->
+                        <div class="d-flex ai-center gap-3">
+                            <div class="pl-5 pr-5 ar-square bg-checkbox"></div>
+                            <div>Label</div>
+                        </div>
+                    </fieldset>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- <script type="module">
+        // import { annotate } from 'rough-notation';
+        // Or using unpkg
+        import { annotate } from 'https://unpkg.com/rough-notation?module';
+
+        const e = document.querySelector('#foo');
+        const annotation = annotate(e, { type: 'box', color: 'var(--ita-colors-primary-500)' });
+        annotation.show();
+    </script> -->
 </body>
 
 </html>
