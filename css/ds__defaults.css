@@ -1,0 +1,48 @@
+/* GLOBAL PARAMETERS */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overscroll-behavior: none;
+}
+
+/* LINKS */
+a {
+    color: var(--ita-colors-text-base-primary);
+}
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+}
+button:disabled {
+    cursor: default;
+}
+
+/* retrait style <details> par défaut de iOS */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details:not([open]) > summary .icons span[class*="icon-"]:nth-child(2) {
+    display: none;
+}
+details[open] > summary .icons span[class*="icon-"]:nth-child(1) {
+    display: none;
+}
+/* retrait style <button> et <select> par défaut de iOS */
+select, button {
+    color: black
+}
+/* Opacity od disabled input on iOS */
+input:disabled {
+    opacity: 1;
+}
+/* input type search reset */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}

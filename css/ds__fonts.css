@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "VictorMono-Regular";
+    src: url("../fonts/VictorMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400
+}
+@font-face {
+    font-family: "VictorMono-Bold";
+    src: url("../fonts/VictorMono-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700
+}
+@font-face {
+    font-family: "Archistico-Normal";
+    src: url("../fonts/Archistico-Normal.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400
+}
+/* Match font-family with font-weight */
+.ff-400,
+.ff-sketch {
+    font-weight: 400;
+}
+.ff-700 {
+    font-weight: 700;
+}

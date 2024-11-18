@@ -1,0 +1,62 @@
+
+[class*="w-1t"],
+[class*="w-2t"],
+[class*="w-3t"],
+[class*="w-4t"],
+[class*="w-5t"],
+[class*="w-6t"],
+[class*="w-7t"],
+[class*="w-8t"],
+[class*="w-9t"],
+[class*="w-10t"],
+[class*="w-11t"],
+[class*="w-12t"] {
+    --wtw-fraction: var(--twelves, -);
+    --wtw-total-amount-of-fractions: 12;
+    --wtw-item-default-width: calc(100% * var(--wtw-fraction) / var(--wtw-total-amount-of-fractions));
+    --wtw-item-offset: calc(var(--wtw-fraction) * var(--dsg-gap, 0px) * ((var(--wtw-total-amount-of-fractions) / var(--wtw-fraction)) - 1) / var(--wtw-total-amount-of-fractions));
+    width: calc(var(--wtw-item-default-width) - var(--wtw-item-offset));
+    box-sizing: border-box;
+}
+@media (min-width: 0px) and (max-width: 599px) {
+    [w-1t*="xs"],
+    [w-2t*="xs"],
+    [w-3t*="xs"],
+    [w-4t*="xs"],
+    [w-5t*="xs"],
+    [w-6t*="xs"],
+    [w-7t*="xs"],
+    [w-8t*="xs"],
+    [w-9t*="xs"],
+    [w-10t*="xs"],
+    [w-11t*="xs"],
+    [w-12t*="xs"] {
+        --wtw-fraction: var(--twelves, -);
+        --wtw-total-amount-of-fractions: 12;
+        --wtw-item-default-width: calc(100% * var(--wtw-fraction) / var(--wtw-total-amount-of-fractions));
+        --wtw-item-offset: calc(var(--wtw-fraction) * var(--dsg-gap, 0px) * ((var(--wtw-total-amount-of-fractions) / var(--wtw-fraction)) - 1) / var(--wtw-total-amount-of-fractions));
+        width: calc(var(--wtw-item-default-width) - var(--wtw-item-offset));
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 600px) {
+    [w-1t*="xl"],
+    [w-2t*="xl"],
+    [w-3t*="xl"],
+    [w-4t*="xl"],
+    [w-5t*="xl"],
+    [w-6t*="xl"],
+    [w-7t*="xl"],
+    [w-8t*="xl"],
+    [w-9t*="xl"],
+    [w-10t*="xl"],
+    [w-11t*="xl"],
+    [w-12t*="xl"] {
+        --wtw-fraction: var(--twelves, -);
+        --wtw-total-amount-of-fractions: 12;
+        --wtw-item-default-width: calc(100% * var(--wtw-fraction) / var(--wtw-total-amount-of-fractions));
+        --wtw-item-offset: calc(var(--wtw-fraction) * var(--dsg-gap, 0px) * ((var(--wtw-total-amount-of-fractions) / var(--wtw-fraction)) - 1) / var(--wtw-total-amount-of-fractions));
+        width: calc(var(--wtw-item-default-width) - var(--wtw-item-offset));
+        box-sizing: border-box;
+    }
+}
