@@ -329,8 +329,8 @@
         "max-width": {
             "prefix": "maxw",
             "generate_from": "",
-            "values": ["100%", "1200px"],
-            "names": ["100", "1200px"],
+            "values": ["100%", "var(--ita-maxw-1)"],
+            "names": ["100", "var1"],
             "responsive": true,
             "generate_utility": false
         },

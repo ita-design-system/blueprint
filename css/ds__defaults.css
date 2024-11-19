@@ -1,4 +1,7 @@
 /* GLOBAL PARAMETERS */
+:root {
+    --ita-maxw-1: 1200px
+}
 * {
     box-sizing: border-box;
 }

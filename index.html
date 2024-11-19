@@ -54,26 +54,29 @@
     <link rel="stylesheet" href="./fonts/icomoon/style.css">
 </head>
 <body class="m-0 | ff-400" style="min-height: 200vh;">
-    <nav class="d-flex ai-center jc-space-between gap-6 | pos-sticky top-0 z-1 | p-4 | boimg-2 bc-200">
-        <div class="d-flex ai-center gap-6">
-            <div class="d-flex ai-center gap-3 | c-primary-500"><span class="icon-menu c-primary-500"></span> Bouton</div>
+
+    <nav class="d-flex ai-center jc-space-between gap-6 | pos-sticky top-0 z-1 | maxw-var1 p-5 m-auto | boimg-2 bc-200">
+        <div class="d-flex ai-center gap-3 | ff-sketch">
+            <span class="icon-menu fs-5 d-none--xl"></span>
             Navigation principale
         </div>
-        <div class="d-flex gap-6">
+        <div class="d-flex gap-6 d-none--xs">
             <a href="#">Lien</a>
             <a href="#">Lien</a>
             <a href="#">Lien</a>
         </div>
     </nav>
 
-    <section class="d-flex ai-start | pos-relative | w-100 p-9 | baimg-stripes-1 boimg-2">
+    <section class="d-flex ai-center fd-column | pos-relative | w-100 pt-9 pb-9 | baimg-stripes-1 boimg-2">
         <div class="pos-absolute top-50 left-50 t-tY-50 t-tX-50"><span class="icon-image fs-9"></span></div>
-        <h2 class="m-0 | ff-sketch fs-7 | bc-200">Titre de la section</h2>
-        <div style="height: 30vh;"></div>
+        <div class="d-flex | w-100 maxw-var1 pl-5 pr-5">
+            <h2 class="m-0 | ff-sketch fs-7 | bc-200">Section Jumbo</h2>
+        </div>
+        <div style="height: 25vh;"></div>
     </section>
 
-    <section class="d-flex fd-column gap-6 | pos-relative | w-100 maxw-1200px m-auto pt-9 pb-9">
-        <h2 class="m-0 | ff-sketch fs-7">Titre de la section</h2>
+    <section class="d-flex fd-column gap-6 | pos-relative | w-100 maxw-var1 m-auto pt-9 pb-9 pl-5 pr-5">
+        <h2 class="m-0 | ff-sketch fs-7">Formulaires</h2>
         <ul class="d-flex fw-wrap gap-6 | m-0 p-0 | ff-sketch | ls-none">
             <li class="w-4t--xl w-12t--xs">
                 <fieldset class="d-flex fd-column gap-6 | m-0 p-6 | b-0 boimg-1">
@@ -81,27 +84,27 @@
                     <!-- Form input -->
                     <div class="d-flex fd-column gap-1">
                         <div>Label</div>
-                        <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
-                            <span class="c-500">Placeholder</span>
+                        <div class="d-flex ai-center jc-space-between | boimg-1 bc-100">
+                            <div class="p-5 | c-500">Placeholder</div>
                         </div>
                     </div>
                     <!-- Form input -->
                     <div class="d-flex fd-column gap-1">
                         <div>Label</div>
-                        <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
-                            Valeur
-                            <span class="icon-close"></span>
+                        <div class="d-flex ai-center jc-space-between | boimg-1 bc-100">
+                            <div class="p-5">Valeur</div>
+                            <span class="icon-close pr-5 fs-5"></span>
                         </div>
                     </div>
                     <!-- Form input -->
                     <div class="d-flex fd-column gap-1">
                         <div>Label</div>
-                        <div class="d-flex ai-center jc-space-between gap-6 | p-5 | boimg-1 bc-100">
-                            <div class="d-flex ai-center gap-3">
-                                <span class="icon-search"></span>
-                                Valeur
+                        <div class="d-flex ai-center jc-space-between | boimg-1 bc-100">
+                            <div class="d-flex ai-center gap-3 | p-5">
+                                <span class="icon-search fs-5"></span>
+                                <div>Valeur</div>
                             </div>
-                            <span class="icon-close"></span>
+                            <span class="icon-close pr-5 fs-5"></span>
                         </div>
                     </div>
                 </fieldset>
@@ -111,17 +114,17 @@
                     <legend>Radios</legend>
                     <!-- Form radio -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-radio-checked"></div>
+                        <div class="pl-4 pr-4 ar-square bg-radio-checked"></div>
                         <div>Label</div>
                     </div>
                     <!-- Form radio -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-radio"></div>
+                        <div class="pl-4 pr-4 ar-square bg-radio"></div>
                         <div>Label</div>
                     </div>
                     <!-- Form radio -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-radio"></div>
+                        <div class="pl-4 pr-4 ar-square bg-radio"></div>
                         <div>Label</div>
                     </div>
                 </fieldset>
@@ -131,17 +134,17 @@
                     <legend>Checkboxes</legend>
                     <!-- Form checkbox -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-checkbox-checked"></div>
+                        <div class="pl-4 pr-4 ar-square bg-checkbox-checked"></div>
                         <div>Label</div>
                     </div>
                     <!-- Form checkbox -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-checkbox"></div>
+                        <div class="pl-4 pr-4 ar-square bg-checkbox"></div>
                         <div>Label</div>
                     </div>
                     <!-- Form checkbox -->
                     <div class="d-flex ai-center gap-3">
-                        <div class="pl-5 pr-5 ar-square bg-checkbox"></div>
+                        <div class="pl-4 pr-4 ar-square bg-checkbox"></div>
                         <div>Label</div>
                     </div>
                 </fieldset>
@@ -149,31 +152,42 @@
         </ul>
     </section>
     
-    <footer class="d-flex fw-wrap gap-9 | p-9 | fs-3 | boimg-2 bc-200">
-        <div class="ff-sketch">Footer</div>
-        <div class="d-flex fd-column gap-2">
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-        </div>
-        <div class="d-flex fd-column gap-2">
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-        </div>
-        <div class="d-flex fd-column gap-2">
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
-            <a href="#">Lien</a>
+    <footer class="d-flex ai-center jc-center | boimg-2 bc-200">
+        <div class="d-flex jc-space-between fw-wrap gap-6 | pl-5 pr-5 pt-9 pb-9 w-100 maxw-var1 m-auto">
+            <div class="d-flex fd-column gap-3 | ff-sketch fs-6">
+                Footer
+                <div class="d-flex gap-6 fs-6">
+                    <span class="icon-comment"></span>
+                    <span class="icon-inbox"></span>
+                    <span class="icon-info"></span>
+                </div>
+            </div>
+            <div class="d-flex gap-7">
+                <div class="d-flex fd-column gap-2">
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                </div>
+                <div class="d-flex fd-column gap-2">
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                </div>
+                <div class="d-flex fd-column gap-2">
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                    <a href="#">Lien</a>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- <script type="module">
