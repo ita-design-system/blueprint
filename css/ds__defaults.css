@@ -13,7 +13,8 @@ body {
 
 /* LINKS */
 a {
-    color: var(--ita-colors-text-base-primary);
+    color: var(--ita-colors-primary-500);
+    text-decoration-thickness: 2px;
 }
 
 /* BUTTONS */
